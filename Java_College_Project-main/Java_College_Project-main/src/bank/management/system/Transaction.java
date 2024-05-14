@@ -44,17 +44,14 @@ public class Transaction extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        getContentPane().setLayout(new javax.swing.BoxLayout(getContentPane(), javax.swing.BoxLayout.LINE_AXIS));
 
         jPanel1.setBackground(new java.awt.Color(51, 102, 255));
         jPanel1.setPreferredSize(new java.awt.Dimension(673, 500));
-        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("PLEASE SELECT YOUR TRANSACTION");
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 60, 540, -1));
 
         bdeposit.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         bdeposit.setText("Deposit");
@@ -63,7 +60,6 @@ public class Transaction extends javax.swing.JFrame {
                 bdepositActionPerformed(evt);
             }
         });
-        jPanel1.add(bdeposit, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 150, 230, 51));
 
         btransactionHistory.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         btransactionHistory.setText("Transaction History");
@@ -72,7 +68,6 @@ public class Transaction extends javax.swing.JFrame {
                 btransactionHistoryActionPerformed(evt);
             }
         });
-        jPanel1.add(btransactionHistory, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 230, 230, 51));
 
         bchangepin.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         bchangepin.setText("Change PIN");
@@ -81,7 +76,6 @@ public class Transaction extends javax.swing.JFrame {
                 bchangepinActionPerformed(evt);
             }
         });
-        jPanel1.add(bchangepin, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 310, 230, 51));
 
         bwithdraw.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         bwithdraw.setText("Withdraw");
@@ -90,7 +84,6 @@ public class Transaction extends javax.swing.JFrame {
                 bwithdrawActionPerformed(evt);
             }
         });
-        jPanel1.add(bwithdraw, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 150, 230, 50));
 
         bbalancecheck.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         bbalancecheck.setText("Balance Check");
@@ -99,7 +92,6 @@ public class Transaction extends javax.swing.JFrame {
                 bbalancecheckActionPerformed(evt);
             }
         });
-        jPanel1.add(bbalancecheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 230, 230, 51));
 
         bcancel.setBackground(new java.awt.Color(255, 0, 51));
         bcancel.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
@@ -110,13 +102,66 @@ public class Transaction extends javax.swing.JFrame {
                 bcancelActionPerformed(evt);
             }
         });
-        jPanel1.add(bcancel, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 310, 230, 51));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/menu.jpg"))); // NOI18N
         jLabel2.setText("jLabel2");
-        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -10, 650, 430));
 
-        getContentPane().add(jPanel1);
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(50, 50, 50)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 540, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(50, 50, 50)
+                .addComponent(bwithdraw, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(50, 50, 50)
+                .addComponent(btransactionHistory, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(60, 60, 60)
+                .addComponent(bbalancecheck, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(50, 50, 50)
+                .addComponent(bchangepin, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(60, 60, 60)
+                .addComponent(bcancel, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(340, 340, 340)
+                .addComponent(bdeposit, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 640, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(60, 60, 60)
+                .addComponent(jLabel1)
+                .addGap(58, 58, 58)
+                .addComponent(bwithdraw, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(30, 30, 30)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(btransactionHistory, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(bbalancecheck, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(29, 29, 29)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(bchangepin, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(bcancel, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)))
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(150, 150, 150)
+                .addComponent(bdeposit, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 400, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
+
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 640, Short.MAX_VALUE)
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 398, Short.MAX_VALUE)
+        );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
